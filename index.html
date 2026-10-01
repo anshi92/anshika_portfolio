@@ -1,499 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Anshika Katara | AI & Business Transformation</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #172033;
-            background: #f7f8fc;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            background: white;
-            border-bottom: 1px solid #e5e7eb;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav strong {
-            font-size: 20px;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #374151;
-        }
-
-        nav a:hover {
-            color: #6d28d9;
-        }
-
-        .hero {
-            padding: 100px 8%;
-            background: linear-gradient(135deg, #f5f3ff, #ffffff);
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            max-width: 850px;
-            line-height: 1.05;
-            margin-bottom: 25px;
-        }
-
-        .hero p {
-            font-size: 21px;
-            max-width: 750px;
-            color: #4b5563;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 13px 22px;
-            margin-right: 12px;
-            border-radius: 8px;
-            background: #6d28d9;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .button.secondary {
-            background: white;
-            color: #6d28d9;
-            border: 1px solid #6d28d9;
-        }
-
-        section {
-            padding: 80px 8%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .intro {
-            max-width: 850px;
-            font-size: 18px;
-            color: #4b5563;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
-            margin-top: 35px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 14px;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            font-size: 22px;
-        }
-
-        .card p {
-            color: #5b6472;
-        }
-
-        .work {
-            margin-top: 30px;
-        }
-
-        .work-item {
-            background: white;
-            padding: 30px;
-            margin-bottom: 20px;
-            border-radius: 14px;
-            border-left: 5px solid #6d28d9;
-        }
-
-        .work-item h3 {
-            margin-bottom: 8px;
-            font-size: 23px;
-        }
-
-        .work-item p {
-            color: #4b5563;
-        }
-
-        .tag {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 6px 10px;
-            background: #f3e8ff;
-            color: #6d28d9;
-            border-radius: 20px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        .process {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-            margin-top: 30px;
-        }
-
-        .step {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .step strong {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 8px;
-            color: #6d28d9;
-        }
-
-        .illustrative {
-            background: #fff7ed;
-            border: 1px solid #fed7aa;
-            padding: 30px;
-            border-radius: 14px;
-            margin-top: 30px;
-        }
-
-        .illustrative h3 {
-            margin-bottom: 12px;
-        }
-
-        .illustrative ul {
-            margin-left: 20px;
-            color: #4b5563;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #111827;
-            color: white;
-        }
-
-        @media (max-width: 800px) {
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .cards,
-            .process {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anshika Katara | AI & Business Transformation</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.65;color:#172033;background:#f5f7fb}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid #e5e7eb;padding:16px 7%;display:flex;justify-content:space-between;align-items:center}
+nav strong{font-size:20px;letter-spacing:-.3px}
+nav a{margin-left:22px;text-decoration:none;color:#374151;font-size:14px}
+nav a:hover{color:#3157a6}
+.hero{padding:82px 7% 88px;background:radial-gradient(circle at 85% 15%,#dce8ff 0,#edf3ff 22%,transparent 45%),linear-gradient(135deg,#f8fbff,#eef3f8);border-bottom:1px solid #e5e7eb}
+.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:center}
+.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:#3157a6;margin-bottom:16px}
+.hero h1{font-size:60px;line-height:1.03;letter-spacing:-2.2px;max-width:760px;margin-bottom:22px}
+.hero p{font-size:20px;color:#4b5563;max-width:760px;margin-bottom:28px}
+.photo-wrap{justify-self:end}
+.profile-photo{width:310px;height:370px;object-fit:cover;border-radius:24px;box-shadow:0 22px 55px rgba(35,55,90,.18);border:8px solid rgba(255,255,255,.9)}
+.button{display:inline-block;padding:12px 20px;margin:0 10px 10px 0;border-radius:9px;background:#3157a6;color:white;text-decoration:none;font-weight:700;font-size:14px}
+.button.secondary{background:white;color:#3157a6;border:1px solid #3157a6}
+section{padding:78px 7%;max-width:1240px;margin:auto}
+section h2{font-size:34px;letter-spacing:-.8px;margin-bottom:18px}
+.intro{max-width:900px;font-size:18px;color:#4b5563}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
+.card{background:#fff;padding:25px;border-radius:15px;border:1px solid #e4e8ef;box-shadow:0 8px 25px rgba(30,45,70,.04)}
+.card h3{font-size:18px;margin-bottom:8px}.card p{color:#5b6472;font-size:15px}
+.work{margin-top:30px}.work-item{background:#fff;padding:30px;margin-bottom:18px;border-radius:15px;border:1px solid #e4e8ef;box-shadow:0 8px 25px rgba(30,45,70,.04);border-left:5px solid #3157a6}
+.work-item h3{margin-bottom:8px;font-size:22px}.work-item p{color:#4b5563}
+.tag{display:inline-block;margin-top:14px;padding:5px 10px;background:#edf3ff;color:#3157a6;border-radius:20px;font-size:12px;font-weight:700}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.step{background:#fff;padding:24px;border-radius:13px;border:1px solid #e4e8ef}.step strong{display:block;font-size:18px;color:#3157a6;margin-bottom:6px}
+.case{background:linear-gradient(135deg,#eef4ff,#fff);border:1px solid #d7e2f5;padding:32px;border-radius:16px;margin-top:28px}
+.case h3{font-size:23px;margin-bottom:10px}.case ul{margin:15px 0 0 22px;color:#4b5563}
+.hobbies{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.hobby{background:#fff;padding:25px;border-radius:14px;border:1px solid #e4e8ef}
+.hobby h3{margin-bottom:7px}.hobby p{color:#5b6472}
+.contact{background:#172033;color:white;max-width:none}.contact-inner{max-width:1100px;margin:auto}.contact .intro{color:#d7dce5}.contact a{color:white}
+footer{text-align:center;padding:30px;background:#101827;color:#cbd5e1;font-size:13px}
+@media(max-width:900px){
+.hero-inner{grid-template-columns:1fr}.photo-wrap{justify-self:start}.profile-photo{width:250px;height:300px}
+.hero h1{font-size:46px}.cards{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:1fr 1fr}.hobbies{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+nav{align-items:flex-start;gap:8px;flex-direction:column}nav a{margin-left:0;margin-right:13px}
+.hero{padding-top:55px}.hero h1{font-size:40px}.hero p{font-size:18px}
+.cards,.process{grid-template-columns:1fr}section{padding:58px 6%}
+}
+</style>
 </head>
-
 <body>
 
 <nav>
-    <strong>Anshika Katara</strong>
-
-    <div>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Contact</a>
-    </div>
+<strong>Anshika Katara</strong>
+<div>
+<a href="#about">About</a>
+<a href="#work">Work</a>
+<a href="#approach">Approach</a>
+<a href="#hobbies">Beyond work</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
-
-<section class="hero">
-
-    <h1>AI, Business & Transformation.</h1>
-
-    <p>
-        Engineer turned business transformation professional, working at the
-        intersection of technology, AI, data, operations and measurable impact.
-    </p>
-
-    <a class="button" href="#work">Explore my work</a>
-
-    <a class="button secondary"
-       href="https://www.linkedin.com/"
-       target="_blank">
-        LinkedIn
-    </a>
-
-</section>
-
+<header class="hero">
+<div class="hero-inner">
+<div>
+<div class="eyebrow">AI • Business • Transformation • Operations</div>
+<h1>Turning complex problems into practical, measurable solutions.</h1>
+<p>Engineer turned business transformation professional, with experience across technology, financial services, consulting, programmes and policy — now focused on AI-enabled business transformation.</p>
+<a class="button" href="#work">Explore my work</a>
+<a class="button secondary" href="resume.pdf" target="_blank">Download my CV</a>
+</div>
+<div class="photo-wrap">
+<img class="profile-photo" src="profile.jpg" alt="Anshika Katara">
+</div>
+</div>
+</header>
 
 <section id="about">
-
-    <h2>About me</h2>
-
-    <p class="intro">
-        My career has moved across technology, financial services, consulting,
-        development programmes and policy. I started as a software engineer,
-        moved into programme and consulting roles, and recently completed my MBA
-        while deepening my work in AI, data and digital transformation.
-    </p>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Technology foundation</h3>
-            <p>
-                Computer Science background with experience in software,
-                data, Python, SQL and digital tools.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Business & strategy</h3>
-            <p>
-                MBA experience combined with consulting, programme management,
-                problem structuring and stakeholder management.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Programme leadership</h3>
-            <p>
-                Experience coordinating complex programmes across multiple
-                organisations, institutions and stakeholders.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>AI & innovation</h3>
-            <p>
-                Building practical understanding of AI, machine learning,
-                generative AI and AI-enabled business transformation.
-            </p>
-        </div>
-
-    </div>
-
+<h2>About me</h2>
+<p class="intro">My career has moved across software engineering, financial services, consulting, development programmes and policy. I recently completed my MBA at TIAS School for Business and Society and have been building deeper capability in AI, data, finance and digital transformation.</p>
+<div class="cards">
+<div class="card"><h3>Technology foundation</h3><p>Computer Science background with software engineering experience and hands-on work with Python, SQL, Power BI and Tableau.</p></div>
+<div class="card"><h3>Business & strategy</h3><p>MBA-qualified with experience structuring business cases, requirements, process improvements and stakeholder-aligned solutions.</p></div>
+<div class="card"><h3>Programme leadership</h3><p>6+ years across complex programmes, cross-functional coordination, delivery, monitoring and measurable outcomes.</p></div>
+<div class="card"><h3>AI & innovation</h3><p>Practical exposure to AI use-case design, agentic workflows, generative AI and human-centred technology solutions.</p></div>
+</div>
 </section>
-
 
 <section id="work">
-
-    <h2>Selected work</h2>
-
-    <div class="work">
-
-        <div class="work-item">
-
-            <h3>AI for Good — Assistive Communication</h3>
-
-            <p>
-                Developed an AI-powered assistive communication solution
-                focused on making communication more accessible. The work
-                involved identifying the user problem, defining the AI use
-                case, considering human-centred design and rapidly prototyping
-                the solution.
-            </p>
-
-            <span class="tag">
-                Winner — AI for Good Hackathon
-            </span>
-
-        </div>
-
-
-        <div class="work-item">
-
-            <h3>EU CBAM Compliance System</h3>
-
-            <p>
-                MBA student consulting project exploring how technology,
-                process design, data and compliance requirements can be brought
-                together into a practical CBAM compliance workflow.
-            </p>
-
-            <span class="tag">
-                MBA Student Consulting Project
-            </span>
-
-        </div>
-
-
-        <div class="work-item">
-
-            <h3>Scaling Programmes Across 65 Institutions</h3>
-
-            <p>
-                Worked on large-scale education and employability programmes
-                reaching approximately 20,000 students across 65 institutions,
-                with approximately 200 students progressing into employment.
-                The work required stakeholder coordination, implementation,
-                monitoring and evaluation and continuous improvement.
-            </p>
-
-            <span class="tag">
-                Programme Management
-            </span>
-
-        </div>
-
-    </div>
-
+<h2>Selected work</h2>
+<div class="work">
+<div class="work-item">
+<h3>ROAR — AI-Coached Intake Agent</h3>
+<p>My MBA capstone explored and validated an AI-coached intake flow designed to help users structure incomplete or inconsistent requests before submission. The concept was prototyped using Microsoft Copilot and developed to be platform-agnostic and reusable beyond the original context.</p>
+<span class="tag">MBA Capstone • AI Use Case Design</span>
+</div>
+<div class="work-item">
+<h3>CBAM Sentinel — EU Regulatory Compliance Business Case</h3>
+<p>Validated and scoped a multi-agent AI compliance workflow, translating a new EU regulation into a structured business case while coordinating technology, compliance and business stakeholders.</p>
+<span class="tag">AI • Regulation • Compliance • Business Case</span>
+</div>
+<div class="work-item">
+<h3>Scaling Programmes Across 65 Institutions</h3>
+<p>Delivered a large-scale employability programme reaching approximately 20,000 youth across 65 institutions, with approximately 200 progressing into employment. The work involved programme delivery, stakeholder coordination, donor reporting and employer partnerships.</p>
+<span class="tag">Programme Management • Operations • Impact</span>
+</div>
+<div class="work-item">
+<h3>Software Engineering — Banking & E-commerce</h3>
+<p>Started my career as a software engineer, building front-end features for banking and e-commerce client applications and collaborating with QA and onshore teams to resolve production issues.</p>
+<span class="tag">Technology • Financial Services</span>
+</div>
+</div>
 </section>
-
 
 <section id="approach">
-
-    <h2>My approach to AI Business Translation</h2>
-
-    <p class="intro">
-        I don't start with "Where can we use AI?"
-        I start with "What problem are we trying to solve, and is AI the right answer?"
-    </p>
-
-
-    <div class="process">
-
-        <div class="step">
-            <strong>01 — Understand</strong>
-            Understand the customer, process, pain point and business context.
-        </div>
-
-        <div class="step">
-            <strong>02 — Challenge</strong>
-            Ask whether AI is actually the right solution versus simplification,
-            digitisation, automation or process change.
-        </div>
-
-        <div class="step">
-            <strong>03 — Shape</strong>
-            Translate the problem into a clear AI use case, requirements,
-            success criteria and data needs.
-        </div>
-
-        <div class="step">
-            <strong>04 — Build</strong>
-            Work across business, product, data and technology teams to
-            design a practical solution.
-        </div>
-
-        <div class="step">
-            <strong>05 — Adopt</strong>
-            Involve users, test workflows and define where human judgement
-            remains essential.
-        </div>
-
-        <div class="step">
-            <strong>06 — Measure</strong>
-            Track business value through quality, time, throughput,
-            customer experience and employee impact.
-        </div>
-
-    </div>
-
+<h2>My approach to AI Business Translation</h2>
+<p class="intro"><strong>I don't start with “Where can we use AI?” I start with “What problem are we trying to solve, and is AI the right answer?”</strong></p>
+<div class="process">
+<div class="step"><strong>01 — Understand</strong>Understand the customer, process, pain point and business context.</div>
+<div class="step"><strong>02 — Challenge</strong>Assess AI against simpler options such as elimination, digitisation, automation or process change.</div>
+<div class="step"><strong>03 — Shape</strong>Translate the problem into a clear use case, requirements, success criteria and data needs.</div>
+<div class="step"><strong>04 — Build</strong>Work across business, product, data and technology teams to shape a practical solution.</div>
+<div class="step"><strong>05 — Adopt</strong>Involve users, test workflows and define where human judgement remains essential.</div>
+<div class="step"><strong>06 — Measure</strong>Track quality, time, throughput, customer experience, employee impact and business value.</div>
+</div>
 </section>
-
 
 <section>
-
-    <h2>Illustrative AI use case — Mortgage Operations</h2>
-
-    <div class="illustrative">
-
-        <h3>
-            AI-assisted mortgage document intake
-        </h3>
-
-        <p>
-            <strong>Illustrative concept — not an NN project.</strong>
-        </p>
-
-        <br>
-
-        <p>
-            A possible AI-enabled workflow could help mortgage operations teams
-            process incoming documentation:
-        </p>
-
-        <br>
-
-        <ul>
-            <li>Classify incoming documents</li>
-            <li>Extract relevant information</li>
-            <li>Check whether required information is complete</li>
-            <li>Identify inconsistencies or exceptions</li>
-            <li>Route cases requiring human review</li>
-            <li>Keep final judgement with appropriately authorised employees</li>
-        </ul>
-
-        <br>
-
-        <p>
-            Potential measures could include handling time, first-time-right
-            rate, manual effort, exception rate, turnaround time and quality.
-        </p>
-
-    </div>
-
+<h2>AI-enabled mortgage operations concept</h2>
+<div class="case">
+<h3>AI-assisted mortgage document intake</h3>
+<p>A conceptual workflow demonstrating how an operational challenge can be translated into an AI-enabled process with clear controls and human oversight.</p>
+<ul>
+<li>Classify incoming mortgage documents</li>
+<li>Extract relevant information from documents</li>
+<li>Check completeness and identify inconsistencies</li>
+<li>Route exceptions and ambiguous cases for human review</li>
+<li>Keep sensitive decisions and final judgement with appropriately authorised employees</li>
+<li>Measure handling time, first-time-right rate, manual effort, exception rate, turnaround time and quality</li>
+</ul>
+</div>
 </section>
 
-
-<section id="contact">
-
-    <h2>Let's connect</h2>
-
-    <p class="intro">
-        I'm interested in AI business transformation, product, operations,
-        process improvement and technology-enabled impact.
-    </p>
-
-    <br>
-
-    <a class="button"
-       href="https://www.linkedin.com/"
-       target="_blank">
-        LinkedIn
-    </a>
-
-    <a class="button secondary"
-       href="https://github.com/anshi92"
-       target="_blank">
-        GitHub
-    </a>
-
+<section id="hobbies">
+<h2>Beyond work</h2>
+<p class="intro">I enjoy staying curious outside my formal work as well — through reading, travelling and continuously learning.</p>
+<div class="hobbies">
+<div class="hobby"><h3>📚 Reading</h3><p>Currently reading <em>Weapons of Math Destruction</em> by Cathy O'Neil — exploring how mathematical models can shape decisions and society.</p></div>
+<div class="hobby"><h3>✈️ Travelling</h3><p>I enjoy discovering new places, cultures and perspectives — and especially planning thoughtful, history- and experience-rich trips.</p></div>
+<div class="hobby"><h3>🧠 Learning new things</h3><p>Recently completed the FMVA and currently continuing to deepen my understanding of finance alongside AI, data and business transformation.</p></div>
+</div>
 </section>
 
+<section id="contact" class="contact">
+<div class="contact-inner">
+<h2>Let's connect</h2>
+<p class="intro">I'm interested in AI business transformation, product, operations, process improvement and technology-enabled impact.</p>
+<br>
+<a class="button" href="https://www.linkedin.com/in/anshika-katara/" target="_blank">LinkedIn</a>
+<a class="button secondary" href="mailto:kataraanshi@gmail.com">Email me</a>
+<a class="button secondary" href="tel:+31620613196">Call me</a>
+<br><br>
+<p>kataraanshi@gmail.com &nbsp;•&nbsp; +31 6 2061 3196 &nbsp;•&nbsp; Utrecht, Netherlands</p>
+</div>
+</section>
 
-<footer>
-
-    © 2026 Anshika Katara · AI & Business Transformation
-
-</footer>
-
+<footer>© 2026 Anshika Katara · AI & Business Transformation</footer>
 </body>
 </html>
